@@ -1,0 +1,195 @@
+@import url("style.css");
+
+#contact {
+    height: 100vh;
+    background: repeating-linear-gradient(rgb(69, 69, 247), wheat);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container .contact_title {
+    color: darkblue;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium';
+    margin: 1rem 0 0 0;
+}
+
+.contact_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.contact_homes {
+    flex: 1;
+}
+
+.contact_buttons .contact_btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 5rem;
+}
+
+.contact_buttons .contact_btn:hover .fa-solid.fa-location-dot,
+.contact_buttons .contact_btn:hover .fa-solid.fa-phone,
+.contact_buttons .contact_btn:hover .fa-solid.fa-envelope,
+.contact_buttons .contact_btn:hover .fa-brands.fa-facebook-messenger {
+    height: 80px;
+    width: 80px;
+}
+
+.contact_buttons .contact_btn h3 {
+    color: black;
+    display: none;
+}
+
+.contact_buttons .contact_btn:hover h3 {
+    display: flex;
+}
+
+.fa-solid.fa-location-dot,
+.fa-solid.fa-phone,
+.fa-solid.fa-envelope,
+.fa-brands.fa-facebook-messenger {
+    color: yellow;
+    font-size: 2rem;
+    background-color: darkblue;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 1rem 0;
+}
+
+.contact_containers {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'itim';
+    color: black;
+}
+
+form input {
+    height: 60px;
+}
+
+form textarea {
+    height: 400px;
+}
+
+::placeholder {
+    color: darkblue;
+    opacity: 0.7;
+}
+
+form .submit_btn {
+    padding: 1rem 2rem;
+    color: darkblue;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'itim';
+    font-weight: 500;
+}
+
+form .submit_btn:hover {
+    background-color: darkblue;
+    color: yellow;
+}
+
+
+@media (max-width: 992px) {
+    #contact {
+        height: auto;
+    }
+
+    .contact_content {
+        width: 95%;
+    }
+
+    .contact_buttons .contact_btn {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact .container .contact_title {
+        font-size: 2rem;
+    }
+
+    #contact .container .contact_subtitle {
+        font-size: 1rem;
+    }
+
+    .contact_content {
+        flex-direction: column-reverse;
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    .contact_homes {
+        order: 2;
+    }
+
+    .contact_containers {
+        order: 1;
+    }
+
+    .contact_buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact_buttons .contact_btn {
+        gap: 0;
+        margin-right: 1rem;
+    }
+
+    .fa-solid.fa-location-dot,
+    .fa-solid.fa-phone,
+    .fa-solid.fa-envelope,
+    .fa-brands.fa-facebook-messenger {
+        height: 50px;
+        width: 50px;
+        font-size: 1rem;
+    }
+
+    form .submit_btn {
+        margin-bottom: 2rem;
+    }
+
+    .contact_buttons .contact_btn:hover h3 {
+        display: none;
+    }
+}

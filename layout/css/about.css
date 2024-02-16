@@ -1,0 +1,196 @@
+@import url("style.css");
+
+#about {
+    height: 100%;
+    background: repeating-linear-gradient(wheat, rgb(255, 255, 112));
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.newlogo img {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+#about .container .title {
+    color: darkblue;
+    font-family: 'russo';
+    font-size: 4rem;
+    margin: 1rem 0 0 0;
+}
+
+#about .container .about_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.about_containers {
+    width: 65%;
+    padding: 0 2rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about_containers .about_title {
+    font-family: 'itim';
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.about_containers .about_subtitle {
+    font-family: 'itim';
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about_containers .about_subtitle span {
+    color: crimson;
+}
+
+.about_containers .content {
+    font-family: 'itim';
+    font-size: 24px;
+}
+
+.about_containers .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.about_containers .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about_containers .button a {
+    border: black;
+    padding: 1rem 5rem;
+    border-radius: 50%;
+    color: darkblue;
+    font-family: 'russo';
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.about_containers .button a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+@media (max-width: 1669px) {
+    .about_containers .about_title {
+        font-size: 3rem;
+    }
+
+    .about_containers .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_containers .content {
+        font-size: 1rem;
+    }
+
+    .about_containers .button a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about_containers .about_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    #about {
+        height: 100%;
+    }
+
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_leftDiv,
+    .about_containers {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_containers {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .about_containers .about_title {
+        font-size: 2rem;
+    }
+
+    .about_containers .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_containers .icons img {
+        width: 75px;
+    }
+
+    .about_containers .button a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #about .container .title {
+        font-size: 2rem;
+    }
+
+    .about_containers {
+        width: 100%;
+        padding: 0 2rem;
+        align-items: center;
+    }
+
+    .about_containers .about_title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about_containers .about_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about_containers .button a {
+        padding: 1rem;
+    }
+
+    .about_containers .icons img {
+        width: 50px;
+    }
+
+    .about_containers .button {
+        gap: 1rem;
+    }
+
+    .about_containers .button a {
+        font-size: 1rem;
+    }
+}
